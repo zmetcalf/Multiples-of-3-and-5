@@ -1,7 +1,7 @@
-naturalNumbers = []
+naturalNumbersTotal = 0
 
-for questionNumber in range (1, 100):
+for questionNumber in range (1, 1000):
     if(((questionNumber % 5) == 0) or ((questionNumber % 3) == 0)):
-        naturalNumbers.append(questionNumber)
+        naturalNumbersTotal = questionNumber + naturalNumbersTotal
         
-print naturalNumbers
+print naturalNumbersTotal
